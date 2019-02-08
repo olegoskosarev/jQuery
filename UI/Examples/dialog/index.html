@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialog Widget</title>
+    <link rel="stylesheet" href="../library/jquery-ui.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="../library/jquery.js"></script>
+    <script src="../library/jquery-ui.min.js"></script>
+</head>
+<body>
+
+    <button id="btn-basic-dialog">Show basic dialog</button>
+    <div id="basic-dialog" title="Basic dialog" style="display: none">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ea!</p>
+    </div>
+
+    <button id="btn-animated-dialog">Show animated dialog</button>
+    <div id="animated-dialog" title="Animated dialog" style="display: none">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur!</p>
+    </div>
+
+    <button id="btn-modal-confirmation">Show modal confirmation</button>
+    <div id="modal-confirmation" title="Modal confirmation" style="display: none">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0px 5px 20px 0px;"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, beatae.</p>
+    </div>
+
+    <button id="btn-modal-form">Show modal form</button>
+    <div id="modal-form" title="Modal form" style="display: none">
+        <p>All form fields are required.</p>
+
+        <form>
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Oleg Kosarev" class="text ui-widget-content ui-corner-all" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="oleg@kosarev.com" class="text ui-widget-content ui-corner-all" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all" required>
+
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+
+    </div>
+
+    <button id="btn-modal-message">Show modal message</button>
+    <div id="modal-message" title="Modal message" style="display: none">
+        <p><span class="ui-icon ui-icon-circle-check" style="float:left; margin:0px 5px 20px 0px;"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus.</p>
+        <p>Lorem ipsum dolor, <b>sit amet consectetur adipisicing.</b></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
