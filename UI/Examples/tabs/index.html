@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs Widget</title>
+    <link rel="stylesheet" href="../library/jquery-ui.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="../library/jquery.js"></script>
+    <script src="../library/jquery-ui.min.js"></script>
+</head>
+<body>
+    
+    <button id="btn-add-new-tab">Add Tab</button>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">First</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            <li><a href="#tabs-2">Second</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            <li><a href="#tabs-3">Third</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+        </ul>
+        <div id="tabs-1">
+            <p><b>Click this tab again to close the content pane.</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa placeat tempore praesentium obcaecati fuga animi quis assumenda, harum non consequatur?</p>
+        </div>
+        <div id="tabs-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ea neque optio assumenda ad eum quas temporibus quae facilis sint.</p>
+        </div>
+        <div id="tabs-3"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla modi velit, hic distinctio similique expedita at recusandae sapiente fugit.</p>
+        </div>
+    </div>
+
+    <div id="dialog" title="Tab data">
+        <form>
+            <fieldset class="ui-helper-reset">
+                <label for="tab-title">Title</label>
+                <input type="text" id="tab-title" name="tab-title" class="text ui-widget-content ui-corner-all">
+                <label for="tab-content">Content</label>
+                <textarea id="tab-content" name="tab-content" class="ui-widget-content ui-corner-all">Tab content</textarea>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
