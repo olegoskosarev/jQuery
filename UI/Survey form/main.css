@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html,
+body {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background-color: #709BA4; 
+}
+
+header{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+form {
+    width: 35vw;
+    padding-top: 5px;
+    margin: 10px auto 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+fieldset {
+    padding: 20px; 
+    border: 0;  
+}
+
+div > label, 
+div > input {
+    display: block;
+}
+
+label,
+legend {
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.text {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: .4em;
+    font-size: 1em;
+}
+
+#age-field {
+    margin-bottom: 20px;
+}
+
+#role-field {
+    margin-bottom: 25px;
+}
+
+.ui-spinner {
+    width: 98%;
+}
+
+.ui-spinner-input {
+    width: 91%;
+}
+
+.ui-checkboxradio-label {
+    width: 100px;
+}
+
+textarea {
+    resize: none;
+    width: 95%;
+    height: 100px;
+}
+
+#submit {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#submit .ui-button {
+    font-size: 1.5em;
+}
+
+input:focus,
+textarea:focus {
+    border-color: grey;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+}

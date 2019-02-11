@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form using jQuery UI</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="https://lmndeit.kg/wp-content/uploads/2017/01/workflow.jpg" alt="header-img">
+    </header>
+
+    <form>
+        <h2>Survey Form for Front-End Developers</h2>
+        <p>Let us know more about you!</p>
+        <fieldset id="main">
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" class="text ui-widget-content ui-corner-all" required>
+            </div>
+
+            <div id="age-field">
+                <label for="age">Age:</label>
+                <input id="age" required>
+            </div>
+
+            <div>
+                <label for="company">Organization:</label>
+                <input id="company" class="text ui-widget-content ui-corner-all" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="text ui-widget-content ui-corner-all" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" class="text ui-widget-content ui-corner-all" required>
+            </div>
+    
+            <div id="role-field">
+                <label for="role">Which option best describes your current role?</label>
+                <select name="role" id="role">
+                    <option>Student</option>
+                    <option selected="selected">Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                </select>
+            </div>
+
+            <fieldset style="padding:0; margin-bottom:20px">
+                <legend>Do you want to get job in our company?</legend>
+                <label for="radio-1">Definitely</label>
+                <input type="radio" name="radio-1" id="radio-1">
+                <label for="radio-2">Maybe</label>
+                <input type="radio" name="radio-1" id="radio-2">
+                <label for="radio-3">Not sure</label>
+                <input type="radio" name="radio-1" id="radio-3">
+            </fieldset>
+
+            <div>
+                <label for="git">Github:</label>
+                <input id="git" class="text ui-widget-content ui-corner-all">
+            </div>
+
+            <fieldset id="technologies" style="padding:0; margin-bottom:20px">
+                <legend>Languages and Technologies(Check all that apply):</legend>
+                <label for="checkbox-1">HTML</label>
+                <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                <label for="checkbox-2">CSS</label>
+                <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                <label for="checkbox-3">Javascript</label>
+                <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                <label for="checkbox-4">jQuery</label>
+                <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                <label for="checkbox-5">Typescript</label>
+                <input type="checkbox" name="checkbox-5" id="checkbox-5">
+                <label for="checkbox-6">Angular</label>
+                <input type="checkbox" name="checkbox-6" id="checkbox-6">
+                <label for="checkbox-7">React</label>
+                <input type="checkbox" name="checkbox-7" id="checkbox-7">
+                <label for="checkbox-8">Git</label>
+                <input type="checkbox" name="checkbox-8" id="checkbox-8">
+            </fieldset>
+
+            <div style="margin-bottom:20px">
+                <label for="comments">Text some about yourself:</label>
+                <textarea id="comments" name="comment" class="ui-widget-content ui-corner-all"></textarea>
+            </div>
+
+            <div id="submit">
+                <button>Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
