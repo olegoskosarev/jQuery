@@ -27,3 +27,7 @@ fieldset {
     padding: 0; 
     border: 0;  
 }
+
+.ui-icon {
+    cursor: pointer;
+}
